@@ -1,18 +1,16 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Container } from "react-bootstrap";
+import HomeScreen from "./screens/HomeScreen";
 import "./bootstrap.min.css";
 
 function App() {
   return (
     <>
       <Header />
-      <main>
-        <Container>
-          <h1>Welcome to SkiShop</h1>
-          <div>Main</div>
-        </Container>
+      <main className="py-3">
+        <HomeScreen />
       </main>
+
       <Footer />
     </>
   );

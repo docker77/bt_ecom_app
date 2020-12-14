@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Row, Col, Nav, NavItem, NavLink } from "react-bootstrap";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 
 function Footer() {
   return (
-    <div>
-      <Container className="bg-dark text-white">
+    <footer>
+      <Container className="">
         <Row>
           <Col className="m-2">
             <Nav
@@ -31,7 +31,7 @@ function Footer() {
           <Col className="text-center py-3">Copyright &copy; SkiShop</Col>
         </Row>
       </Container>
-    </div>
+    </footer>
   );
 }
 
