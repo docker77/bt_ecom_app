@@ -1,11 +1,19 @@
 import Header from "./components/Header";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer";
+import { Container } from "react-bootstrap";
+import "./bootstrap.min.css";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="App">Hello world</div>
+      <main>
+        <Container>
+          <h1>Welcome to SkiShop</h1>
+          <div>Main</div>
+        </Container>
+      </main>
+      <Footer />
     </>
   );
 }
