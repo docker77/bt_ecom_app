@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import Rating from "./Rating";
 
 function Product({ product }) {
-  var { _id, name, price, image, description } = product;
+  var { _id, name, price, image, description, rating, numReviews } = product;
 
   return (
     <Card className="p-3 m-3 rounded">
@@ -16,6 +17,7 @@ function Product({ product }) {
           </Card.Title>
         </a>
         <Card.Text>{description}</Card.Text>
+        <Rating rating={rating} reviews={numReviews} />
         <Button variant="primary">Buy it for ${price}</Button>
       </Card.Body>
     </Card>
