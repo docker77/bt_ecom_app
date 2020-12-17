@@ -1,27 +1,28 @@
 import React from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header>
-      <Container className="pt-1">
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="/">SkiShop</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link href="/cart">
-                <i className="fas fa-shopping-cart mr-1" />
-                Cart
-              </Nav.Link>
-              <Nav.Link href="/login">
-                <i className="fas fa-user mr-1" />
-                Login
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </Container>
+    <header class="text-gray-700 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <i class="fas fa-skiing text-5xl"></i>
+          <span class="ml-3 text-xl">SkiShop</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <Link class="mr-5 hover:text-gray-900">Shopping</Link>
+          <Link class="mr-5 hover:text-gray-900">Woman</Link>
+          <Link class="mr-5 hover:text-gray-900">Man</Link>
+          <Link class="mr-5 hover:text-gray-900">
+            <i className="pr-2 fas fa-shopping-cart" />
+            Cart
+          </Link>
+        </nav>
+        <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
+          <i className="pr-2 fas fa-user" />
+          Sign In
+        </button>
+      </div>
     </header>
   );
 };

@@ -1,8 +1,8 @@
 import React from "react";
 
-function Rating({ rating, reviews }) {
+function Rating({ rating, reviews = 0 }) {
   return (
-    <div className="text-warning">
+    <div className="text-yellow-300">
       <span>
         <i
           className={
@@ -58,7 +58,7 @@ function Rating({ rating, reviews }) {
           }
         />
       </span>
-      <span className="text-dark pl-2">{reviews} reviews</span>{" "}
+      <span className="pl-2 text-gray-500">{reviews} reviews</span>{" "}
     </div>
   );
 }
