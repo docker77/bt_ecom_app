@@ -5,7 +5,7 @@ import products from "../products";
 function LatestProducts() {
   return (
     <section className="container mx-auto text-gray-700 body-font">
-      <h1 className="py-20 text-4xl font-bold text-center text-gray-600">
+      <h1 className="py-20 text-3xl font-bold text-left text-gray-500">
         Latest Products
       </h1>
       <div className="flex px-5 pb-24 ">
