@@ -6,8 +6,10 @@ const Header = () => {
     <header class="text-gray-700 body-font">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <i class="fas fa-skiing text-5xl"></i>
-          <span class="ml-3 text-xl">SkiShop</span>
+          <Link to="/">
+            <i class="fas fa-skiing text-5xl align-middle"></i>
+            <span class="ml-3 text-xl align-middle ">SkiShop</span>
+          </Link>
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link class="mr-5 hover:text-gray-900">Shopping</Link>
