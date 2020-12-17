@@ -15,14 +15,14 @@ function Product({ product }) {
   } = product;
 
   return (
-    <div className="w-full p-4 lg:w-1/3 md:w-1/2">
+    <div className="w-full p-6 lg:w-1/3 md:w-1/2 ">
       <Link
         to={`/product/${_id}`}
-        className="relative block overflow-hidden rounded shadow-md h-96"
+        className="relative block overflow-hidden rounded shadow-lg h-96"
       >
         <img
           alt="ecommerce"
-          className="block object-cover object-center w-full h-full"
+          className="block object-cover object-center w-full h-full transform hover:scale-125 transition duration-500"
           src={image}
         />
       </Link>
@@ -35,7 +35,7 @@ function Product({ product }) {
             {name}
           </h2>
         </Link>
-        <p className="py-3 text-xs text-gray-500">{description}</p>
+        <p className="py-3 text-sm text-gray-500">{description}</p>
         <Rating className="py-2 " rating={rating} reviews={numReviews} />
         <Link to={`/product/${_id}`}>
           <button className="p-3 mt-2 bg-gray-200 rounded-md">
