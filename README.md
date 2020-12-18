@@ -1,4 +1,4 @@
-This is test project for Ecommerce website on MERN stack using TailwindCSS.
+This is test project for Ecommerce website using ReactJS and TailwindCSS.
 
 ![Screenshot](/frontend/public/images/screenshot.png?raw=true "SkiShop Screenshot")
 
