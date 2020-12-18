@@ -7,7 +7,7 @@ function ProductScreen() {
   let { id } = useParams();
 
   const product = products.find((product) => product._id === id);
-  let { _id, name, price, image, description, rating, numReviews } = product;
+  let { name, price, image, description, rating, numReviews } = product;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,9 +37,9 @@ function ProductScreen() {
                 <a className="text-gray-500">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -49,9 +49,9 @@ function ProductScreen() {
                 <a className="ml-2 text-gray-500">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -61,9 +61,9 @@ function ProductScreen() {
                 <a className="ml-2 text-gray-500">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >
@@ -85,9 +85,9 @@ function ProductScreen() {
               <button className="inline-flex items-center justify-center w-10 h-10 p-0 ml-4 text-gray-500 bg-gray-200 border-0 rounded-full">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >

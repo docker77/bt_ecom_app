@@ -1,20 +1,23 @@
+import { Fragment } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import LoginScreen from "./screens/LoginScreen";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <Header />
-      <Route path="/" exact>
-        <HomeScreen />
-      </Route>
-      <Route path="/product/:id">
-        <ProductScreen />
-      </Route>
-      <Footer />
+      <Switch>
+        <Route path="/login" component={LoginScreen} />
+        <Fragment>
+          <Header />
+          <Route path="/" exact component={HomeScreen} />
+          <Route path="/product/:id" component={ProductScreen} />
+          <Footer />
+        </Fragment>
+      </Switch>
     </Router>
   );
 }
