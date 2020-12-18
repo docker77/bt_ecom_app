@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <section
       id="hero"
-      class="text-gray-700 body-font bg-gray-100 bg-cover bg-right-center bg-gradient-to-r from-gray-800 to-white"
+      class="text-gray-700 body-font bg-gray-100 bg-cover bg-right-center"
     >
       <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div class="lg:flex-grow md:w-1/2 lg:w-1/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Before they sold out
             <br class="hidden lg:inline-block" />
-            readymade gluten
+            the coolest POWDER in Season
           </h1>
           <p class="mb-8 leading-relaxed w-1/2 text-white">
             Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
@@ -20,9 +21,12 @@ function Hero() {
             hexagon try-hard chambray.
           </p>
           <div class="flex justify-center">
-            <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <Link
+              to="/product/2"
+              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
               Shop now!
-            </button>
+            </Link>
           </div>
         </div>
       </div>

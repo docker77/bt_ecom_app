@@ -31,11 +31,11 @@ function Product({ product }) {
           {category}
         </h3>
         <Link to={`/product/${_id}`}>
-          <h2 className="text-lg font-medium text-gray-900 title-font">
+          <h2 className="pb-3 text-lg font-medium text-gray-900 title-font">
             {name}
           </h2>
         </Link>
-        <p className="py-3 text-sm text-gray-500">{description}</p>
+        {/* <p className="py-3 text-sm text-gray-500">{description}</p> */}
         <Rating className="py-2 " rating={rating} reviews={numReviews} />
         <Link to={`/product/${_id}`}>
           <button className="p-3 mt-2 bg-gray-200 rounded-md">

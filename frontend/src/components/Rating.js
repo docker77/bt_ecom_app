@@ -2,7 +2,7 @@ import React from "react";
 
 function Rating({ rating, reviews = 0 }) {
   return (
-    <div className="text-yellow-300">
+    <div className="text-sm text-yellow-300">
       <span>
         <i
           className={
