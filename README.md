@@ -1,5 +1,8 @@
 This is test project for Ecommerce website on MERN stack using TailwindCSS.
 
+![Screenshot](/frontend/public/images/screenshot.png?raw=true "SkiShop Screenshot")
+
+
 ## Available Scripts
 
 In the "frontend" project directory, you can run:
