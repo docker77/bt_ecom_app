@@ -6,7 +6,7 @@ function HomeScreen() {
   return (
     <>
       <Hero />
-      <LatestProducts />;
+      <LatestProducts />
     </>
   );
 }

@@ -7,29 +7,31 @@ function LoginScreen() {
       <div className="flex flex-col overflow-hidden bg-white shadow-lg rounded-md max md:flex-row md:flex-1 lg:max-w-screen-md">
         <div className="relative p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly">
           <img
-            className="absolute object-cover w-full h-full"
+            className="absolute object-cover w-full h-full opacity-60"
             src="/images/skiing.jpg"
             alt="skie"
           />
-          <div className="my-3 text-4xl font-bold tracking-wider text-center">
-            <Link to="/">Login to SkiShop Account</Link>
+          <div className="absolute">
+            <div className="my-3 text-4xl font-bold tracking-wider text-center">
+              <Link to="/">SkiShop</Link>
+            </div>
+            <p className="flex flex-col items-center justify-center my-40 text-center">
+              <span>Don't have an account?</span>
+              <Link to="/" className="underline">
+                Get Started!
+              </Link>
+            </p>
+            <p className="mt-6 text-sm text-center text-gray-300">
+              Read our{" "}
+              <Link to="/" className="underline">
+                terms
+              </Link>{" "}
+              and{" "}
+              <Link to="/" className="underline">
+                conditions
+              </Link>
+            </p>
           </div>
-          <p className="flex flex-col items-center justify-center mt-10 text-center">
-            <span>Don't have an account?</span>
-            <Link to="/" className="underline">
-              Get Started!
-            </Link>
-          </p>
-          <p className="mt-6 text-sm text-center text-gray-300">
-            Read our{" "}
-            <Link to="/" className="underline">
-              terms
-            </Link>{" "}
-            and{" "}
-            <Link to="/" className="underline">
-              conditions
-            </Link>
-          </p>
         </div>
         <div className="p-5 bg-white md:flex-1">
           <h3 className="my-4 text-2xl font-semibold text-gray-700">
